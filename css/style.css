@@ -18,7 +18,7 @@ a {
     background-size: cover;
 }
 
-                   /*inner nav*/                
+                   /*inner nav*/
 
 .nav-inner {
     padding-top: 38px;
@@ -210,7 +210,7 @@ a {
 
 /*Header works*/
 .works-header {
-    padding: 65px 0 20px 100px;
+    padding: 65px 0 40px 100px;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -222,34 +222,42 @@ a {
 
 /*Card works*/
 .work-item {
-    width: 45%;
-    padding: 20px 0 0 20px;
+ 
 }
 
 .work-item:hover .work-image img {
-        opacity: 0.2;
+        opacity: 0.2; 
     }
 
-.work-inner {
-        position: relative;
-    }
+.work-inner { /*Видимость елементов внутри изображения*/
+    position: relative;
+}
 
-.work-image {
-    display: block;
-    
-    height: auto;
+.work-image { /*Подложка для изображения*/
     background: #644845;
 }
 
-.work-image img {
-    display: block;
-    width: 100%;
-    height: 350px;
-    transition: opacity 0.2s ease;
-}
+    .work-image img {
+        display: block;
+        max-width: 100%;
+        transition: opacity 0.2s ease;
+    }
 
-.work-title {
-    margin-left: 135px;
+/*Grid*/
+.grid-item-1-2 {
+    padding-left: 20px;
+    display: grid;
+    grid-template-rows: 451px 1fr;
+    grid-gap: 30px;
+}
+.grid-item-3-4 {
+    padding-left: 20px;
+    grid-template-rows: 1fr 451px;
+    grid-gap: 30px;
+}  /*/Grid*/
+
+
+.work-title { /*Заголовок карточки*/
     width: 100%;
     max-width: 270px;
     font-family: 'Montserrat', sans-serif;
@@ -260,19 +268,29 @@ a {
     text-align: center;
     opacity: 0;
     position: absolute;
-    top: 25%;
+    top: 0;
     left: 0;
     z-index: 10;
     transform: translate3d(0, -50%, 0);
     transition: opacity 0.2s ease;
 }
 
+.work-title-1 { /*Позиционирование заголовка блок 1 и 4*/
+   top: 27%;
+   left: 110px;
+}
+
+.work-title-2 { /*Позиционирование заголовка блок 2 и 3*/
+    top: 27%;
+    left: 215px;
+}
+
+
 .work-item:hover .work-title {
     opacity: 1;
 }
 
-.work-description {
-    margin: 50px 0 0 80px;
+.work-description { /*Описание карточки*/
     width: 100%;
     max-width: 400px;
     font-family: 'Montserrat', sans-serif;
@@ -288,6 +306,16 @@ a {
     z-index: 10;
     transform: translate3d(0, -50%, 0);
     transition: opacity 0.2s ease;
+}
+
+.work-description-1 { /*Позиционирование описания блок 1 и 4*/
+    top: 55%;
+    left: 40px;
+}
+
+.work-description-2 { /*Позиционирование описания блок 2 и 3*/
+    top: 55%;
+    left: 165px;
 }
 
 .work-item:hover .work-description {
