@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
@@ -18,21 +17,21 @@
                 <!--Логотип-->
                 <div class="logo-inner">
                     <img class="logo-img-header" src="img/block-1-header/block-1-icon-logo.png" alt="Логотип:">
-                    <a href="#" class="logo-item">SCANDI</a>
+                    <a href="#main-top" class="logo-item">SCANDI</a>
                </div>
                 <!--Меню навигации-->
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="#">О компании</a></li>
-                    <li class="nav-item"><a href="#">Портфолио</a></li>
-                    <li class="nav-item"><a href="#">Отзывы клиентов</a></li>
-                    <li class="nav-item"><a href="#">Команда</a></li>
-                    <li class="nav-item"><a href="#">Как мы работаем</a></li>
-                    <li class="nav-item"><a href="#">Оставить заявку</a></li>
+                    <li class="nav-item"><a href="#about-link">О компании</a></li>
+                    <li class="nav-item"><a href="#our-works">Портфолио</a></li>
+                    <li class="nav-item"><a href="#reviews-clients">Отзывы клиентов</a></li>
+                    <li class="nav-item"><a href="#our-team">Команда</a></li>
+                    <li class="nav-item"><a href="#too-work">Как мы работаем</a></li>
+                    <li class="nav-item"><a href="#stay-request">Оставить заявку</a></li>
                     <li class="nav-item"><a href="tel:+7 (981) 857-46-24">+7 (981) 857-46-24</a></li>
                 </ul>
             </nav> <!--/Меню навигации-->
             <div class="main-header-inner"> <!--Заголовок, текст, кнопка-->
-                <h1 class="main-header">Поможем сделать вашу квартиру уютнее</h1>
+                <h1 class="main-header" id="main-top">Поможем сделать вашу квартиру уютнее</h1>
                 <p class="subtitle">
                     Подбираем текстиль, мебель и аксессуары
                     под ваш интерьер, находим магазины
@@ -42,15 +41,16 @@
             </div>
         </div> <!--/Контейнер-->
     </header>
-
+    <main> <!--/MAIN-->
 <!--About Us Block-->
     <section class="about-inner">
         <div class="container">
-            <h2 class="header-block-about">О нас</h2>
+            <h2 class="header-block-about" id="about-link">О нас</h2>
             <div class="about-content-inner">
-                <img class="img-about" src="img/img-about-block.jpg" alt="Европейский стиль" />
+                <img class="img-about" src="img/img-about-block.jpg" alt="Европейский стиль">
                 <p class="description-about">
-                    Премиальный европейский текстиль - одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
+                    Премиальный европейский текстиль - одно из самых главных направлений работы коллектива. 
+                    Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
                     <br>
                     <br>
                     Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
@@ -76,65 +76,72 @@
         <!--Our Works Block-3-->
     <section class="works-block">
         <div class="container">
-            <h2 class="works-header">Наши работы</h2>
+            <h2 class="works-header" id="our-works">Наши работы</h2>
             <div class="works-inner">
-                <!--Наши работы (попробовать реализовать через чистый флекс, прочитать про жадность блока)-->
+                <div class="grid-item-1-2"><!--Grid-->
                 <div class="work-item">
                     <div class="work-inner">
                         <div class="work-image">
                             <img src="img/block-3-works/work-1.jpg" alt="Квартира-студия">
-                            <div class="work-title">Квартира-студия 30 кв.м.</div>
-                            <div class="work-description">
+                            <div class="work-title work-title-1">Квартира-студия 30 кв.м.</div>
+                            <div class="work-description work-description-1">
                                 В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
                                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
                             </div>
                         </div>
                     </div>
                 </div>
+                </div><!--/Grid-->
+                <div class="grid-item-1-2"><!--Grid-->
                 <div class="work-item">
                     <div class="work-inner">
                         <div class="work-image">
                             <img src="img/block-3-works/work-2.jpg" alt="Квартира-студия">
-                            <div class="work-title">Квартира-студия 30 кв.м.</div>
-                            <div class="work-description">
+                            <div class="work-title work-title-2">Просторная квартира 150 кв.м.</div>
+                            <div class="work-description work-description-2">
                                 В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
                                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
                             </div>
                         </div>
                     </div>
                 </div>
+                </div><!--/Grid-->
+                <div class="grid-item-3-4"><!--Grid-->
                 <div class="work-item">
                     <div class="work-inner">
                         <div class="work-image">
                             <img src="img/block-3-works/work-3.jpg" alt="Квартира-студия">
-                            <div class="work-title">Квартира-студия 30 кв.м.</div>
-                            <div class="work-description">
+                            <div class="work-title work-title-2">Квартира-студия 30 кв.м.</div>
+                            <div class="work-description work-description-2">
                                 В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
                                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
                             </div>
                         </div>
                     </div>
                 </div>
+                    </div> <!--/Grid-->
+                <div class="grid-item-3-4">
                 <div class="work-item">
                     <div class="work-inner">
                         <div class="work-image">
                             <img src="img/block-3-works/work-4.jpg" alt="Квартира-студия">
-                            <div class="work-title">Квартира-студия 30 кв.м.</div>
-                            <div class="work-description">
+                            <div class="work-title work-title-1">Квартира-студия 30 кв.м.</div>
+                            <div class="work-description work-description-1">
                                 В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
                                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
             <a href="#" class="more-work-item">Cмотреть ещё →</a>
-        </div>
+                </div>
+            </div>
     </section>
             <!--Our team Block-->
     <section class="team-block">
         <div class="container">
-            <h2 class="team-header">Команда</h2>
+            <h2 class="team-header" id="our-team">Команда</h2>
             <div class="team-inner">
                 <div class="team-item">
                     <img class="team-image" src="img/block-4-team/team-1.jpg" alt="Маша">
@@ -160,7 +167,7 @@
                     </p>
                 </div>
             </div>
-            <h2 class="team-progress-header">Как мы работаем</h2>
+            <h2 class="team-progress-header" id="too-work">Как мы работаем</h2>
             <div class="team-progress-inner">
                 <div class="team-progress-item">
                     <div class="progress-num"><span class="number-pos">1</span></div>
@@ -196,7 +203,7 @@
                     <!--Reviews Block-->
     <article class="reviews-block">
         <div class="container">
-            <h2 class="reviews-header">Отзывы</h2>
+            <h2 class="reviews-header" id="reviews-clients">Отзывы</h2>
             <div class="reviews-inner">
                 <div class="reviews-slider-left"><a href="#" class="reviews-slider-pos-inner">&larr;</a></div>
                 <div class="reviews-item-text">
@@ -222,14 +229,14 @@
         <div class="container">
             <div class="request-inner">
                 <div class="request-item-left">
-                    <h2 class="request-header">Оставить заявку</h2>
+                    <h2 class="request-header" id="stay-request">Оставить заявку</h2>
                     <p class="request-subtitle">
                         Оставьте свои контакты. Менеджер перезвонит
                         в удобное вам время и ответит на все вопросы.
                     </p>
                     <form id="send-request" action="#" method="post">
-                        <input class="text-field" type="text" name="user-name" placeholder="Введите имя" form="send-request">
-                        <input class="tel-field" type="tel" name="telephone-number" placeholder="Введите телефон" form="send-request" required">
+                        <input class="text-field" type="text" name="user-name" placeholder="Введите имя" form="send-request" autocomplete="off" required>
+                        <input class="tel-field" type="tel" name="telephone-number" placeholder="Введите телефон" form="send-request" autocomplete="off" required>
                         <input class="submit-field" type="submit" name="send-request" form="send-request" value="Оставить заявку">
                     </form>
                 </div>
@@ -240,6 +247,7 @@
             </div>
         </div>
     </article>
+        </main> <!--/MAIN-->
     <footer class="footer-block">
         <div class="container">
         <div class="footer-inner">
