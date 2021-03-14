@@ -595,8 +595,9 @@ a {
 /*INPUT[Text]*/
 .text-field {
     padding-top: 44px;
-    display: block;
+    display: inline-block;
     width: 500px;
+    white-space: normal;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -604,25 +605,40 @@ a {
     background: #8D7370;
     line-height: 30px;
     border: none;
+    outline: none;
     border-bottom: 1px solid #ffffff;
+    transition: border 0.2s ease;
 }
 
-/*INPUT[Tel]*/
-.tel-field {
-    padding-top: 35px;
-    display: block;
-    width: 500px;
+    /*INPUT[Tel]*/
+    .tel-field {
+        padding-top: 35px;
+        display: block;
+        width: 500px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #F6EDE9;
+        background: #8D7370;
+        line-height: 30px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ffffff;
+    }
+
+/*Stylization placeholder fileds[text],[tel]*/
+input::-webkit-input-placeholder {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    color: #F6EDE9;
-    background: #8D7370;
+    font-weight: 500;
     line-height: 30px;
-    border: none;
-    border-bottom: 1px solid #ffffff;
+    color: #F6EDE9;
 }
-
-
+/*Event placeholder on select*/
+input[type=text]:focus,
+input[type=tel]:focus {
+    border-bottom: 1px solid #533738;
+}
 
 /*Button request*/
 .submit-field {
@@ -649,19 +665,6 @@ a {
     .submit-field:active {
         color: #000000;
     }
-
-/*Stylization placeholder fileds[text],[tel]*/
-input::-webkit-input-placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #F6EDE9;
-}
-/*Event placeholder on select*/
-input::selection::-webkit-input-placeholder {
-    color: transparent;
-}
 
 /*Google maps*/
 .google-map-right {
