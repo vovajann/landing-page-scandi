@@ -677,7 +677,6 @@ input::selection::-webkit-input-placeholder {
 .footer-inner {
     padding: 37px 0 37px;
     display: flex;
-    justify-content: space-between;
 }
 
 .tel-item {
@@ -699,7 +698,7 @@ input::selection::-webkit-input-placeholder {
 }
 
 .author-item {
-    padding-right:100px;
+    padding-left: 300px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
