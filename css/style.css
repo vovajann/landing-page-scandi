@@ -23,6 +23,7 @@ a {
 .nav-inner {
     padding-top: 38px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
 }
@@ -163,6 +164,7 @@ a {
 .progress-inner {
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #8D7370;
 }
@@ -222,7 +224,8 @@ a {
 
 /*Card works*/
 .work-item {
- 
+    max-width: 100%;
+    height: auto;
 }
 
 .work-item:hover .work-image img {
@@ -314,7 +317,7 @@ a {
 }
 
 .work-description-2 { /*Позиционирование описания блок 2 и 3*/
-    top: 55%;
+    top: 60%;
     left: 165px;
 }
 
@@ -362,6 +365,7 @@ a {
 
 .team-inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -406,6 +410,7 @@ a {
 
 .team-progress-inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
