@@ -8,7 +8,7 @@ a {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0;
+    
 }
 
                     /*bg header block*/
@@ -103,9 +103,9 @@ a {
 /*Button submit request*/
 .btn-header {
     margin: 46px 0 168px;
+    padding: 0;
     width: 309px;
     height: 74px;
-    padding: 0;
     border: none;
     background: #CC8B86;
     font-family: 'Montserrat', sans-serif;
@@ -150,7 +150,7 @@ a {
 
 .description-about {
     margin-left: 62px;
-    width: 530px;
+    max-width: 530px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -223,10 +223,6 @@ a {
 }
 
 /*Card works*/
-.work-item {
-    max-width: 100%;
-    height: auto;
-}
 
 .work-item:hover .work-image img {
         opacity: 0.2; 
@@ -380,7 +376,6 @@ a {
 .team-image {
     width: 100%;
     max-width: 375px;
-    height: auto;
 }
 
 .description-team {
